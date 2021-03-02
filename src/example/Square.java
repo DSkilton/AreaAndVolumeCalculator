@@ -9,11 +9,13 @@ package example;
  *
  * @author Duncan
  */
-public class Square {
-
-    public static int squareArea(int length) {
-        //start of method which takes one parameter
-        return length * length; //maths to work out area
-    } //end of method
+public class Square implements Shape{
+    public double length;
     
+    public double calculateArea() {
+        return length * length;
+    }
+    
+    
+
 }

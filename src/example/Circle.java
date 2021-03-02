@@ -9,10 +9,11 @@ package example;
  *
  * @author Duncan
  */
-public class Circle {
+public class Circle implements Shape{
+    public final double PI = 3.14;
+    public double radius;
 
-    public static double rectangleArea(double length, double width) {
-        return length * width;
+    public double calculateArea(){
+        return PI * radius * radius;
     }
-    
 }

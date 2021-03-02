@@ -9,6 +9,9 @@ package example;
  *
  * @author Duncan
  */
-public interface Shape {//start of interface
-    public double calculateArea(); //method template
-}//end of interface
+public class AreaCalculator {
+    
+    public double calculateShapeArea(Shape shape){
+        return shape.calculateArea();
+    }
+}
