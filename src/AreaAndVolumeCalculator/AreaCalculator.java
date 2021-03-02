@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package example;
+package AreaAndVolumeCalculator;
 
 /**
  *
  * @author Duncan
  */
-public interface Shape {//start of interface
-    public double calculateArea(); //method template
-}//end of interface
+public class AreaCalculator {
+    
+    public double calculateShapeArea(Shape shape){
+        return shape.calculateArea();
+    }
+}

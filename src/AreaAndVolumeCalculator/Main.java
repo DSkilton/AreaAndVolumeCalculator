@@ -1,4 +1,4 @@
-package example;
+package AreaAndVolumeCalculator;
 import java.util.Scanner;
 
 

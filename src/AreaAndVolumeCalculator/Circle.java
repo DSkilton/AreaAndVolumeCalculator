@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package example;
+package AreaAndVolumeCalculator;
 
 /**
  *
  * @author Duncan
  */
-public class AreaCalculator {
-    
-    public double calculateShapeArea(Shape shape){
-        return shape.calculateArea();
+public class Circle implements Shape{
+    public final double PI = 3.14;
+    public double radius;
+
+    public double calculateArea(){
+        return PI * radius * radius;
     }
 }

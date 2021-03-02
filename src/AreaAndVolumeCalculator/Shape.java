@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package example;
+package AreaAndVolumeCalculator;
 
 /**
  *
  * @author Duncan
  */
-public class Circle implements Shape{
-    public final double PI = 3.14;
-    public double radius;
-
-    public double calculateArea(){
-        return PI * radius * radius;
-    }
-}
+public interface Shape {//start of interface
+    public double calculateArea(); //method template
+}//end of interface
