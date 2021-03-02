@@ -33,11 +33,10 @@ public class Menu {
             
             if(iInput == 1){//if 1. see above menu
                 areaMenu();// call to method
-                InputFactory.SC.next();//advancing scanner to next line
-                //you can comment out line 28 and run menu to see what happens
+                break;
             } else if (iInput == 2){
                 volumeMenu();
-                InputFactory.SC.next();
+                break;
             } 
             
         } while(iInput != 0);//will run the loop until the user enters a zero

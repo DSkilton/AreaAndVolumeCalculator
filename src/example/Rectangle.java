@@ -13,10 +13,6 @@ public class Rectangle implements Shape{
     private double length;
     private double width;
     
-    public double calculateArea(){
-        return length * width;
-    }
-    
     public double getLength(){
         return length; 
     }
@@ -33,7 +29,7 @@ public class Rectangle implements Shape{
         this.width = width;
     }
     
-    public double getArea(){
+    public double calculateArea(){
         return this.length * this.width;
     }
 }
