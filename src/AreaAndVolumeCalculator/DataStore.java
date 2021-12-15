@@ -7,9 +7,8 @@ package AreaAndVolumeCalculator;
 
 /**
  *
- * @author Duncan
+ * @author MC03353
  */
-public interface Shape extends MenuIterator{//start of interface
-    public double calculateArea(); //method template
+public class DataStore {
     
-}//end of interface
+}

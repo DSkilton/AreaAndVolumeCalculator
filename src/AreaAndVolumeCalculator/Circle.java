@@ -1,18 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AreaAndVolumeCalculator;
+import 
 
 /**
  *
  * @author Duncan
  */
 public class Circle implements Shape{
-    public final double PI = 3.14;
-    public double radius;
-
+    private final double PI = 3.14;
+    private double radius;
+    private String shapeName= null;
+    
+    @Override
+    public void addToList(String shapeName){
+        DataStore.shapeSet.add(getShapeName());
+    }
+    
+    @Override
+    public String getShapeName() {
+        if(shapeName == null){
+            setShapeName();
+        }        
+        return shapeName;
+    }
+    
+    @Override
+    public void setShapeName() {
+        String shapeName = "Circle";
+        addToList(shapeName);
+    }
+    
+    @Override
     public double calculateArea(){
         return PI * radius * radius;
     }

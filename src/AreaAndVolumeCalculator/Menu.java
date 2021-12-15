@@ -1,9 +1,3 @@
-/*
-
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package AreaAndVolumeCalculator;
 
 /**
@@ -26,7 +20,7 @@ public class Menu {
             while(!InputFactory.SC.hasNextInt()){//start of while loop
                 System.out.println("must be a whole number");
                 InputFactory.SC.next();//advances scanner to next line so program doesnt
-                //                       get caught in a loop
+                                       //get caught in a loop
             }//end of while loop
             
             iInput = InputFactory.SC.nextInt();//storing user input to iInput
@@ -44,11 +38,11 @@ public class Menu {
         System.exit(0);//closes the program
      
     } //end of our method
-    
+
     public static void areaMenu(){
         System.out.println("area menu");
     }
-    
+
     public static void volumeMenu(){
         System.out.println("volume menu");
     }
