@@ -5,6 +5,22 @@ package AreaAndVolumeCalculator;
  * @author Duncan
  */
 public class Square extends Rectangle implements Shape{
+    private String shapeName = null; 
+    
+    @Override
+    public void addToList(String shapeName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public String getShapeName() {
+        return shapeName;
+    }
+    
+    @Override
+    public void setShapeName() {
+        String shapeName = "Square";
+    }
     
     public double calculateArea(){
         return super.calculateArea();
@@ -19,4 +35,5 @@ public class Square extends Rectangle implements Shape{
         super.setLength(length);
         super.setWidth(length);
     }
+
 }
