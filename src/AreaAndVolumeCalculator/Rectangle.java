@@ -4,9 +4,13 @@ package AreaAndVolumeCalculator;
  *
  * @author Duncan
  */
-public class Rectangle implements Shape{
+public class Rectangle extends DataStore implements Shape{
     private double length;
     private double width;
+    
+    public Rectangle(){
+        setShapeName();
+    }
     
     public double getLength(){
         return length; 
@@ -27,4 +31,20 @@ public class Rectangle implements Shape{
     public double calculateArea(){
         return this.length * this.width;
     }
+    
+//    @Override
+//    public String getShapeName() {
+//        if(shapeName == null){
+//            setShapeName();
+//        }
+//        return shapeName;
+//    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" + "length=" + length + ", width=" + width + '}';
+    }
+
+    
+    
 }

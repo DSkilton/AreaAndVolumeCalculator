@@ -8,4 +8,14 @@ import java.util.HashSet;
 public class DataStore {
     static HashSet<String> shapeSet = new HashSet();
     
+    public void setShapeName() {
+        String shapeName = this.getClass().getSimpleName();
+        addToList(shapeName);
+    }
+        
+    public void addToList(String shapeName) {
+        DataStore.shapeSet.add(shapeName);
+    }
+    
+    
 }

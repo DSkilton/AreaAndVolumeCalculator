@@ -1,5 +1,7 @@
 package AreaAndVolumeCalculator;
 
+import java.util.Iterator;
+
 /**
  *
  * @author Duncan
@@ -38,6 +40,16 @@ public class Menu {
         System.exit(0);//closes the program
      
     } //end of our method
+    
+    public static void menuPopulation(){
+        int count = 1;
+        Iterator it = DataStore.shapeSet.iterator();
+        
+        while(it.hasNext()){
+            System.out.println(count + ". " + it.next());
+            count++;
+        }
+    }
 
     public static void areaMenu(){
         System.out.println("area menu");
