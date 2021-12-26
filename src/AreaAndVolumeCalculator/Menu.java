@@ -51,11 +51,11 @@ public class Menu {
         }
     }
 
-    public static void areaMenu(){
+    public static void areaMenu(Shape shape){
         System.out.println("area menu");
     }
 
-    public static void volumeMenu(){
+    public static void volumeMenu(Shape shape){
         System.out.println("volume menu");
     }
 }
